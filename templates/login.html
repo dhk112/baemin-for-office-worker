@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Baemin_signup{% endblock %}
+{% block body %}
+<div class="container">
+    <form method="post" action="" class="form-signin">
+      {% csrf_token %}
+      <h2 class="form-signin-heading">Please login</h2>
+      <input type="text" name="username"
+       class="form-control" placeholder="username" required="" autofocus="">
+      <input type="password" name="password"
+       class="form-control" placeholder="password" required="">
+       {{ error }}
+      <button class="btn btn-lg btn-primary btn-block" type="submit">
+        Log in
+      </button>
+    </form>
+  </div>
+{% endblock %}
