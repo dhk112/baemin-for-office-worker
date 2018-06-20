@@ -14,7 +14,7 @@
                 업체명
               </th>
               <td>
-              {{ user.partners.name }}
+              {{ user.partner.name }}
               </td>
             </tr>
             <tr>
@@ -22,7 +22,7 @@
                 연락처
               </th>
               <td>
-              {{ user.partners.contact }}
+              {{ user.partner.contact }}
               </td>
             </tr>
             <tr>
@@ -30,7 +30,7 @@
                 주소
               </th>
               <td>
-              {{ user.partners.address }}
+              {{ user.partner.address }}
               </td>
             </tr>
             <tr>
@@ -38,11 +38,13 @@
                 업체소개
               </th>
               <td>
-              {{ user.partners.description }}
+              {{ user.partner.description }}
               </td>
           </tr>
           </table>
+          <a href="/partner/edit/">
           <button class="btn btn-default btn-block">수정하기</button>
+          </a>
         </div>
       </div>
     {% else %}
