@@ -3,6 +3,7 @@
 {% block body %}
 {% include "navbar.html" %}
 <div class="container">
+
   정보를 수정해주세요.
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
@@ -13,5 +14,22 @@
       </form>
     </div>
   </div>
+  <!--
+  <h2>정보를 수정해주세요.</h2>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        {% csrf_token %}
+        업체명<br>
+        <input type="text" name="업체명" value="{{ partner_name }}"><br>
+        연락처<br>
+        <input type="text" name="연락처" value="{{ partner_contact }}"><br>
+        주소<br>
+        <input type="text" name="주소" value="{{ partner_address }}"><br>
+        <br>
+        <input type="submit" value="저장하기">
+      </input>
+    </div>
+  </div>
+  -->
 </div>
 {% endblock %}

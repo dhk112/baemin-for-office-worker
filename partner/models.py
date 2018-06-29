@@ -19,6 +19,7 @@ class Partner(models.Model):
     description = models.TextField(
         verbose_name="상세 소개",
     )
+    is_active = models.BooleanField(default=False)
 
 class Menu(models.Model):
     partner = models.ForeignKey(
